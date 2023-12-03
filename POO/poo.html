@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejemplo de JavaScript</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+
+    <script>
+		function Suma(valor,valor2){
+        	this.valor1=valor;
+            this.valor2=valor2;
+            this.primervalor=function(valor){
+            	this.valor=valor;
+            }
+            this.segundovalor=function(valor2){
+            	this.valor2=valor;
+            }
+            this.retornar=function(){
+            	return this.valor+this.valor2;
+            }
+            
+        
+        }
+        let suma1= new Suma(5,10);
+        document.write("La suma de 5 y 10 es: "+suma1.retornar());
+        document.write("<br>");
+        suma1.primervalor(10);
+        suma1.segundovalor(1);
+        document.write("la suma es : "+suma1.retornar());
+        
+        
+    </script>
+
+</body>
+</html>

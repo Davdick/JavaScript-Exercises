@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ejemplo de JavaScript</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+
+    <script>
+        function nombres(){
+            let contador=0;
+            let cadena;
+            do {
+                cadena=prompt("Ingresa una cadena: ");
+                contador++;
+            } while (cadena!='fin');
+            contador--;
+            document.write("Se ingresaron "+contador+" palabras");
+        }
+        nombres();
+
+
+    </script>
+
+</body>
+
+</html>

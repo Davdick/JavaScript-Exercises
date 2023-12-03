@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejemplo de JavaScript</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <form>
+        <p>Ingresa clave: <input type="text" id="clave" onBlur="verificar(this)"></p>
+    </form>
+    
+    <script>
+		function verificar(param){
+        	if(param.value.length<7 || param.value.length>20){
+            	alert("Se ingresaron menos de 7 ó más de 20 caracteres.");
+            }else{
+            	alert("todo bien.");
+            }
+        }
+    </script>
+
+</body>
+</html>
+    

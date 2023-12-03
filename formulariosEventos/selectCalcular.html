@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejemplo de JavaScript</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+
+    <form>
+        <p>Procesador:</p>
+        <select id="procesador">
+            <option value="400">Intel i3</option>
+            <option value="600">Intel i5</option>
+            <option value="800">Intel i7</option>
+        </select>
+        <p>Monitor:</p>
+        <select id="Monitor">
+            <option value="250">Samsung 20</option>
+            <option value="350">Samsung 22</option>
+            <option value="550">Samsung 26</option>
+        </select>
+        <p>Disco duro:</p>
+        <select id="Discoduro">
+            <option value="300">500 GB</option>
+            <option value="440">1 TB</option>
+            <option value="500">3 TB</option>
+        </select>
+        <p><input type="button" value="calcular" id="btn" onClick="calcular()"></p>
+        <p>Resultado:<input type="text" id="res"></p>
+        
+    </form>
+    
+    <script>
+		function calcular(){
+        	let select1=document.getElementById('procesador');
+            let precio1=select1.options[select1.selectedIndex].value;
+            //
+            let select2=document.getElementById("Monitor");
+            let precio2=select2.options[select2.selectedIndex].value;
+            //
+            let select3=document.getElementById('Discoduro');
+            let precio3=select3.options[select3.selectedIndex].value;
+            //
+            precio1=parseInt(precio1);
+            precio2=parseInt(precio2);
+            precio3=parseInt(precio3);
+            let suma=precio1+precio2+precio3;
+            document.getElementById('res').value=suma;
+        }
+    </script>
+
+</body>
+</html>

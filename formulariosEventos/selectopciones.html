@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejemplo de JavaScript</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <h1>PIZZAS</h1>
+    <select id="select1" onChange="func()">
+    	<option value="30" id='op1'>Jamon y queso </option>
+        <option value="60" id='op2'>Muzarella</option>
+        <option value="90" id='op1'>Morrones</option>
+        
+    </select>
+    <p>Precio:<input type="text" id="mostrar"></p>
+    <script>
+		function func(){
+        	let opciones=document.getElementById('select1');
+            //document.getElementById('text1').value = seleccion.selectedIndex;
+            //document.getElementById('text2').value = seleccion.options[seleccion.selectedIndex].text;
+            //document.getElementById('mostrar').options[document.getElementById('select1').selectedIndex].value;
+            document.getElementById('mostrar').value = opciones.options[opciones.selectedIndex].value;
+        }
+    </script>
+
+</body>
+</html>
+    

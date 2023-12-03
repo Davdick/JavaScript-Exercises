@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ejemplo de JavaScript</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+
+    <script>
+        function cargar(vec,vec2){
+            for(let i=0;i<vec.length;i++){
+                let dato=parseInt(prompt("Ingresa dato primer vector: "+i));
+                vec[i]=dato;
+            }
+            for(let f=0;f<vec2.length;f++){
+                let dato2=parseInt(prompt("Ingresa dato segundo vector: "+f));
+                vec2[f]=dato2;
+            }
+
+        }
+        function mostrar(vec){
+            for(let i=0;i<vec.length;i++){
+                document.write("Los datos ingresados son: ");
+                document.write(vec[i]);
+                document.write('<br>');
+            }
+
+        }
+        function sumar(vec,vec2,vec3){
+            let suma1=0;
+            let suma2=0;
+            let sumaDOS=0;
+            for(let i=0;i<vec.length;i++){
+                suma1+=vec[i];
+            }
+            for(let f=0;f<vec2.length;f++){
+                suma2+=vec2[f];
+            }
+            sumaDOS=suma1+suma2;
+            document.write('<br>');
+            vec3[0]=sumaDOS;
+            for(let j=0;j<vec3.length;j++){
+                document.write(vec3[0]);
+            }
+            }
+
+
+        
+        let tamaño=parseInt(prompt("Ingresa tamaño del vector 1 "));
+        let tamaño2=parseInt(prompt("Ingresa tamaño del vector 2 "));
+
+        let vec=new Array(tamaño);
+        let vec2=new Array(tamaño2);
+        let vec3=new Array();
+        
+        cargar(vec,vec2);
+        mostrar(vec);
+        sumar(vec,vec2,vec3);
+       
+
+    </script>
+
+</body>
+
+</html>

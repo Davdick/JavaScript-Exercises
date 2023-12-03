@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejemplo de JavaScript</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+
+    <script>
+		function Persona(){
+            this.name=prompt("Ingresa nombre:");
+            this.edad=parseInt(prompt("Ingresa edad:"));
+        }
+        function Empresa(){
+       		const limite=60;
+            this.edl=limite;
+           	this.ver=function(personas){
+            	if(personas.edad>=this.edl){
+                	return true;
+                }
+                else{
+                	return false;
+                }
+            }
+        }
+        
+        let persona1=new Persona();
+        let persona2=new Persona();
+        let persona3=new Persona();
+        
+        let empresa=new Empresa();
+        
+        let cont=0;
+        if(empresa.ver(persona1)){
+        	cont++;	
+        }
+        if(empresa.ver(persona2)){
+        	cont++;	
+        }
+        if(empresa.ver(persona3)){
+        	cont++;	
+        }
+        console.log("La cantidad de personas que superan la edad son: "+cont);
+        document.write("La cantidad de personas que superan la edad son: "+cont);
+        
+    </script>
+
+</body>
+</html>
+    

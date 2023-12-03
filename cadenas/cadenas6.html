@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ARROBA</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+
+    <script>
+        let cont=0;
+        function arroba(mail){
+            for (let i = 0; i < mail.length; i++) {
+                if (mail.charAt(i)=='@') {
+                 cont++;   
+                }
+                
+            }
+            if (cont!=0) {
+                document.write(mail);
+            } else {
+                document.write("Falta el arroba");
+            }
+        }
+        let mail=prompt("Ingresa tu email");
+        arroba(mail);
+
+
+
+    </script>
+
+</body>
+
+</html>

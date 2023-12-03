@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ejemplo de JavaScript</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+
+    <script>
+        function añadir(arr){
+            for(let i=0;i < arr.length; i++){ 
+                let dato=prompt("Ingresa dato "+i);
+                arr[i]=parseInt(dato);
+
+            }
+        }
+        function sumar(arr){
+            let suma=0;
+            for (let i=0;i<arr.length;i++){ 
+   	            suma+=arr[i];
+            }
+            document.write("La suma es: "+suma);
+            document.write('<br>');
+        }
+        function mayores36(arr){
+            let sumaM=0;
+            let contM=0;
+            for (let i=0;i<arr.length;i++){ 
+   	            if (arr[i] > 36){
+                    contM=contM+1;
+                    sumaM+=arr[i];
+                }
+            }
+            document.write("Total de numeros mayores a 36: "+contM);
+            document.write('<br>');
+            document.write("Suma numeros mayores 36: "+sumaM)
+            document.write('<br>');
+        }
+        function mostrar(arr){
+            for (let i=0;i<arr.length;i++){ 
+   	            document.write(arr[i]) 
+                   document.write('<br>');
+            }
+        }
+        function mayores50(arr){
+            let cont5=0;
+            for (let i=0;i<arr.length;i++){
+                if(arr[i]>50){
+                    cont5++;
+                }
+
+            }
+            document.write("Numeros mayores a 50: "+ cont5);
+            document.write('<br>');
+        }
+
+        let arr= Array(8);
+        añadir(arr);
+        sumar(arr);
+        mayores36(arr);
+        mayores50(arr);
+
+    </script>
+
+</body>
+
+</html>

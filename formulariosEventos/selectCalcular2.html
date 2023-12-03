@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejemplo de JavaScript</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    
+    <form>
+        <h2>SELECCIONA TU PIZZA</h2>
+        <select id="pizzas">
+            <option value="4">Queso</option>
+            <option value="6">Jamon y Queso</option>
+            <option value="10">Especial</option>
+        </select>
+        <h2>CANTIDAD</h2>
+        <select id="cantidad">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>
+        <p><input type="button" value="calcular" onClick="calcular()"></p>
+        <p>Resultado:<input type="text" id="los"></p>
+    </form>
+
+    <script>
+		function calcular(){
+        	let sel1=document.getElementById('pizzas');
+            let precio1=sel1.options[sel1.selectedIndex].value;
+            let sel2=document.getElementById("cantidad");
+            let cant=sel2.options[sel2.selectedIndex].value;
+            precio1=parseInt(precio1);
+            cant=parseInt(cant);
+            let res=precio1*cant;
+            document.getElementById("los").value=res;
+        }
+    </script>
+
+</body>
+</html>

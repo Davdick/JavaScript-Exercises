@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejemplo de JavaScript</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <form>
+    	<p>futbol<input type="checkbox" id="check1"></p>
+        <p>basket<input type="checkbox" id="check2"></p>
+        <p>tenis<input type="checkbox" id="check3"></p>
+        <input type="button" value="mostrar" onClick="accion()">
+    </form>
+    
+    <script>
+		function accion(){
+        	if (document.getElementById('check1').checked) {
+                alert('haz seleccionado futbol')
+            }
+            if (document.getElementById('check2').checked) {
+                alert('haz seleccionado basket')
+            }
+            if (document.getElementById('check3').checked) {
+                alert('haz seleccionado tenis')
+            }
+        }
+    </script>
+
+</body>
+</html>

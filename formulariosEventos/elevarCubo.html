@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejemplo de JavaScript</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <form>
+        <p>Ingresa un entero:<input type="text" id="num"></p>
+        <p><input type="button" id="btn" onClick="la()" value="confirmar"></p>
+    </form>
+    	
+    <script>
+		function la(){
+        	let num= document.getElementById('num').value;
+            let res= Math.pow(num,3);
+            alert("EL cubo de: "+num+" es: "+res);
+        }
+    </script>
+
+</body>
+</html>
+    

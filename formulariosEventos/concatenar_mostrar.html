@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejemplo de JavaScript</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+
+    <form>
+    	<input type="text" id="ape" value="apellido">
+        <input type="text" id="nom" value="nombre">
+        <input type="button" onClick="juas()" value="enviar">
+        <input type="text" id="resultado">
+    </form>
+    
+    <script>
+		function juas(){
+        	let nombre=document.getElementById('nom').value;
+            let apellido=document.getElementById('ape').value;
+            document.getElementById('resultado').value = nombre+" "+apellido;
+        }
+    </script>
+
+</body>
+</html>

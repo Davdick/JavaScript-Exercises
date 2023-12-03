@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejemplo de JavaScript</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <form>
+        <h1>Eres mayor de edad?</h1>
+        <p><input type="radio" id="el">Si</p>
+        <p><input type="radio" id="ella">No</p>
+        <input type="button" onClick="verificar()" value="verificar">
+    </form>
+    
+    <script>
+			function verificar(){
+            	if(document.getElementById('el').checked){
+                    alert("eres mayor");
+                }else{
+                	alert("no eres mayor")
+                }
+                
+            }
+    </script>
+
+</body>
+</html>
+    

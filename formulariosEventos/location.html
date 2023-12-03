@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejemplo de JavaScript</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <h2>PAGINA RANDOM</h2>
+	<input type="button" value="click" onClick="ir()">
+    <script>
+		function ir(){
+        	let random=Math.random()*3;
+            let num=parseInt(random);
+           switch(num){
+               case 0:
+                  window.location='https://www.outlook.com';
+               break;
+               case 1:
+                   window.location='https://www.mail.com';
+               break;
+               case 2:
+                   window.location='https://www.yahoo.com';
+               break;
+           }
+        }
+    </script>
+
+</body>
+</html>
+    

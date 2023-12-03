@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ejemplo de JavaScript</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+
+    <script>
+        let cadena;
+        let contador=0;
+        let FIN='FIN';
+        do {
+            cadena=prompt("Ingresa dato: ");
+            cadena=cadena.toUpperCase();
+            contador++;
+
+        } while (cadena!=FIN);
+        contador--;
+        document.write(contador);
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejemplo de JavaScript</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+		
+    <form>
+        <p>Ingresa nombre: <input type="text" id="nom"></p>
+        <p>Ingresa Apellidos: <input type="text" id="ape"></p>
+        <p>Ingresa mail: <input type="text" id="mail"></p>
+        <p> Ingresa comentarios: <textarea id="com" col="20" rows="10"></textarea></p>
+        <input type="button" onClick="enviar()" value="ENVIAR">
+    </form>
+    <script>
+		function enviar(){
+        	let nombre=document.getElementById('nom').value;
+            let apellido=document.getElementById('ape').value;
+            let email=document.getElementById('mail').value;
+            let comentarios=document.getElementById('com').value;
+            alert("Los datos ingresados son: "+nombre+" "+apellido+" "+email+" "+comentarios)
+        }
+    </script>
+
+</body>
+</html>
+    
